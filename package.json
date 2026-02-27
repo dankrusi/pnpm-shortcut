@@ -1,0 +1,20 @@
+{
+  "name": "pnpm-shortcut",
+  "version": "1.0.0",
+  "description": "Type 'p' instead of 'pnpm' — a lightweight global shortcut for pnpm",
+  "keywords": ["pnpm", "shortcut", "cli"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "bin": {
+    "p": "bin/p.js"
+  },
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "files": [
+    "bin",
+    "scripts"
+  ]
+}
