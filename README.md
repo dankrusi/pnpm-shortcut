@@ -5,9 +5,7 @@ Type `p` instead of `pnpm` — a lightweight global shortcut for [pnpm](https://
 ## Installation
 
 ```sh
-npm install -g pnpm-shortcut
-# or
-pnpm add -g pnpm-shortcut
+pnpm add -g https://github.com/dankrusi/pnpm-shortcut
 ```
 
 After installation the `p` command is available globally:
