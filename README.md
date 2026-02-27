@@ -20,17 +20,16 @@ p run build
 
 ### Custom shortcut name
 
-Pass a custom name via the `npm_config_pnpm_shortcut_name` environment variable
-(or `PNPM_SHORTCUT_NAME`) and the postinstall script will create an additional
-symlink with that name alongside the default `p`:
+The installer will interactively ask for a shortcut name during `npm install -g`.
+Just press **Enter** to accept the default (`p`), or type any name you prefer:
 
-```sh
-# Use "pn" instead of "p"
-npm_config_pnpm_shortcut_name=pn npm install -g pnpm-shortcut
-
-# or with pnpm
-PNPM_SHORTCUT_NAME=pn pnpm add -g pnpm-shortcut
 ```
+pnpm-shortcut: Enter shortcut name [p]: pn
+pnpm-shortcut: created shortcut "pn" -> pnpm
+```
+
+In non-interactive environments (CI, piped installs) the default `p` is used
+automatically without any prompt.
 
 ## How it works
 
